@@ -1,0 +1,193 @@
+.footer {
+    padding: 50px 0;
+    background-color: $main-black;
+    color: #fff;
+
+    &__title {
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+    }
+    &__contacts {
+        margin-top: 32px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+
+        &-logo {
+            transition: all 0.3s;
+            &:hover {
+                filter:brightness(0);
+            }
+        }
+    }
+    &__phone-link {
+        transition: all 0.3s;
+        &:hover {
+            color: #000;
+        }
+    }
+
+
+    &__privacy {
+        margin-top: 32px;
+        font-family: 'DIN Pro';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        text-align: center;
+        &-link {
+            text-decoration: underline;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1950px) {
+    .footer {
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__phone {
+            &-link {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+        &__privacy {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        &__title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &__phone {
+            &-link {
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
+        &__privacy {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__phone {
+            &-link {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        &__privacy {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__title {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        &__phone {
+            &-link {
+                font-size: 23px;
+                line-height: 29px;
+            }
+        }
+        &__whatsapp, &__telegram {
+            width: 28px;
+        }
+        &__privacy {
+            font-size: 18px;
+        }
+        &__contacts, &__privacy {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__phone {
+            &-link {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+        &__privacy {
+            font-size: 16px;
+        }
+        &__whatsapp, &__telegram {
+            width: 25px;
+        }
+        &__contacts, &__privacy {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__phone {
+            &-link {
+                line-height: 26px;
+            }
+        }
+        &__privacy {
+            font-size: 14px;
+        }
+        &__whatsapp, &__telegram {
+            display: none;
+        }
+        &__contacts, &__privacy {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        &__title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__contacts, &__privacy {
+            margin-top: 10px;
+        }
+    }
+}

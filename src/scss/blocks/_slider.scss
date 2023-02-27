@@ -1,0 +1,170 @@
+.slider {
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 668px;
+    position: relative;
+    &__prev, &__next {
+        width: 113px;
+        height: 113px;
+        border-radius: 100%;
+        background-color: $main-black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__wrapper {
+        height: 100%;
+        overflow: hidden;
+
+    }
+    &__inner {
+        display: flex;
+        height: 100%;
+        position: relative;
+        transition: all 0.3s;
+        left: 0;
+        align-items:center;
+
+        img {
+            max-width: unset;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 50px;
+        }
+    }
+
+    &__pags {
+        position: absolute;
+        bottom: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+    }
+    &__dot{
+        border-radius: 100%;
+        width: 21px;
+        height: 21px;
+        background: #6C6C6C;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $main-black;
+        }
+
+        &.active {
+            background-color: $main-black;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .slider {
+        height: 600px;
+        &__prev, &__next {
+            width: 90px;
+            height: 90px;
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slider {
+        height: 550px;
+        &__prev, &__next {
+            width: 80px;
+            height: 80px;
+            img {
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slider {
+        gap: 35px;
+        height: 450px;
+        &__inner {
+            &-img {
+                border-radius: 40px;
+            }
+        }
+        &__prev, &__next {
+            width: 70px;
+            height: 70px;
+            img {
+                width: 30px;
+            }
+        }
+        &__dot{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        gap: 30px;
+        height: 370px;
+        &__inner {
+            img {
+                border-radius: 30px;
+            }
+        }
+        &__prev, &__next {
+            width: 60px;
+            height: 60px;
+            img {
+                width: 25px;
+            }
+        }
+        &__pags {
+            gap: 14px;
+        }
+        &__dot {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider {
+        gap: 10px;
+        height: 250px;
+        &__inner {
+            img {
+                border-radius: 20px;
+            }
+        }
+        &__prev, &__next {
+            width: 40px;
+            height: 40px;
+            img {
+                width: 20px;
+            }
+        }
+        &__pags {
+            gap: 12px;
+        }
+        &__dot {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

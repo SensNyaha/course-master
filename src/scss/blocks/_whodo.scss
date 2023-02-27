@@ -1,0 +1,278 @@
+.whodo {
+    margin-top: 80px;
+    overflow: hidden;
+    &__grid {
+        display: grid;
+        max-width: 725px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        grid-auto-rows: max-content;
+        margin: 100px auto 0;
+        gap: 35px;
+    }
+
+    &__item {
+        color: black;
+        text-align: center;
+        &-big {
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+        }
+        &-small {
+            font-family: 'Museo Sans Cyrl';
+            font-weight:500;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-family: 'Museo Sans Cyrl';
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            color: $main-black;
+        }
+    }
+
+    &__person {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-between;
+        z-index: -5;
+        &_left {
+            left: 0;
+            img {
+                transform: scale(1.05) translateY(-20px);
+            }
+        }
+        &_right {
+            right: 0;
+        }
+
+        &-name {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: #1C1C1C;
+            text-align: center;
+        }
+    }
+    &__bottom-grad {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0) 48.67%, #ffffff 100%);
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 1950px) {
+    .whodo {
+        &__person {
+            &_left {
+                img {
+                    transform: scale(1.05) translateY(15px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .whodo {
+        &__grid {
+            margin-top: 250px;
+        }
+
+        &__person {
+            top: 150px;
+
+            &-name {
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 200;
+                width: 120%;
+                font-size: 28px;
+            }
+            &-img {
+                overflow: hidden;
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .whodo {
+        &__grid {
+            margin-top: 250px;
+        }
+
+        &__person {
+            &-name {
+                width: 120%;
+                font-size: 24px;
+            }
+            &-img {
+                width: 200px;
+                height: 200px;
+            }
+
+        }
+        &__item {
+            &-big {
+                font-size: 38px;
+            }
+            &-small {
+                font-size: 28px;
+            }
+            &-descr {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .whodo {
+        &__grid {
+            gap: 30px;
+            margin-top: 250px;
+            max-width: 80%;
+        }
+        &__person {
+            &-name {
+                font-size: 20px;
+            }
+            &-img {
+                width: 170px;
+                height: 170px;
+            }
+        }
+        &__item {
+            &-big {
+                font-size: 34px;
+            }
+            &-small {
+                font-size: 24px;
+            }
+            &-descr {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whodo {
+        &__grid {
+            gap: 25px;
+            margin-top: 220px;
+            max-width: 100%;
+        }
+        &__person {
+            &-img {
+                width: 150px;
+                height: 150px;
+            }
+            &_left {
+                left: 5%;
+            }
+            &_right {
+                right: 5%;
+            }
+        }
+        &__item {
+            &-big {
+                font-size: 30px;
+            }
+            &-small {
+                font-size: 20px;
+            }
+            &-descr {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .whodo {
+        &__grid {
+            gap: 15px;
+            margin-top: 200px;
+        }
+        &__person {
+            top: 150px;
+
+            &-name {
+                font-size: 20px;
+            }
+            &_left {
+                left: 20%;
+                transform: translateX(-50%);
+            }
+            &_right {
+                right: 20%;
+                transform: translateX(50%);
+            }
+            &-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__item {
+            &-big {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            &-small {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .whodo {
+        &__grid {
+            gap: 10px;
+        }
+        &__item {
+            &-big {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            &-small {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}

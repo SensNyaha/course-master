@@ -1,0 +1,118 @@
+.title {
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &_sub {
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        width: max-content;
+        margin: 55px auto 0;
+        position: relative;
+        text-align: center;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: calc(100% + 14px);
+            background-color: $main-black;
+            left: -30px;
+            top: -7px;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 11px;
+            height: 11px;
+            border-radius: 100%;
+            left: -35px;
+            top: -15px;
+            background-color: $main-black;
+        }
+    }
+}
+
+@media screen and (max-width: 1950px) {
+    .title {
+        font-size: 55px;
+        line-height: 65px;
+        &_sub {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .title {
+        font-size: 50px;
+        line-height: 60px;
+        &_sub {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 45px;
+        line-height: 55px;
+        &_sub {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        &_sub {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 35px;
+        line-height: 45px;
+        &_sub {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 30px;
+        line-height: 36px;
+        &_sub {
+            font-size: 16px;
+            line-height: 19px;
+            width: auto;
+            padding-left: 14px;
+            padding-right: 14px;
+            &:before {
+                left: 10px;
+            }
+    
+            &:after {
+                left: 5px;
+            }
+        }
+    }
+}

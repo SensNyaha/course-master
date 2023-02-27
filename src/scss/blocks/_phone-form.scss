@@ -1,0 +1,184 @@
+.phone-form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 170px;
+    row-gap: 33px;
+    justify-content: center;
+    &__tel {
+        width: 544px;
+        padding: 29px 56px;
+        background: rgba(255, 255, 255, 0.35);
+        border: 5px solid #FFFFFF;
+        border-radius: 643px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 42px;
+        color: #fff;
+        &::placeholder {
+            color: #fff;
+        }
+        &_promo {
+            width: 406px;
+            border: 3px solid $main-grey;
+            padding: 16px 39px;
+            font-size: 25px;
+            line-height: 30px;
+            color: $main-grey;
+            &::placeholder {
+                color: $main-grey;
+            }
+        }
+    }
+    &__submit {
+        padding: 29px;
+        width: 540px;
+        background: #E8D6BF;
+        border-radius: 208px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 42px;
+        border: 2px solid black;
+        transition: all 0.3s;
+        &_promo {
+            width: 265px;
+            padding: 19px 37px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    &__privacy {
+        font-family: 'DIN Pro';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        &_promo {
+            font-size: 20px;
+            width: 384px;
+            text-align: left;
+            color: $main-grey;
+        }
+    }
+}
+
+@media screen and (max-width: 1950px) {
+    .phone-form {
+        &__tel {
+            padding: 20px 40px;
+            &_promo {
+                width: 350px;
+                padding: 14px 30px;
+            }
+        }
+        &__submit {
+            padding: 20px 40px;
+            &_promo {
+                padding: 14px 30px;
+            }
+        }
+        &__privacy {
+            font-size: 26px;
+            &_promo {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .phone-form {
+        &__tel {
+            width: 100%;
+            padding: 14px 30px;
+            font-size: 21px;
+            line-height: 25px;
+            text-align: center;
+            border-width: 2px;
+            &_promo {
+            }
+        }
+        &__submit {
+            width: 100%;
+            padding: 14px 30px;
+            font-size: 20px;
+            line-height: 25px;
+            &_promo {
+            }
+        }
+        &__privacy {
+            font-size: 20px;
+            &_promo {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .phone-form {
+        &__tel {
+            &_promo {
+                width: calc(60% - 11px);
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        &__submit {
+            &_promo {
+                width: calc(40% - 11px);
+                padding: 14px;
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .phone-form {
+        align-items:center;
+        flex-direction: column;
+        &__tel {
+            padding: 16px 22px;
+            font-size: 14px;
+            line-height: 17px;
+            &_promo {
+                width: 80%;
+                padding: 12px 22px;
+            }
+        }
+        &__submit {
+            padding: 13px 69px;
+            font-size: 18px;
+            line-height: 22px;
+            &_promo {
+                width: 80%;
+                padding: 11px 30px;
+            }
+        }
+        &__privacy {
+            font-size: 12px;
+            line-height: 100%;
+            &_promo {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .phone-form {
+        &__tel {
+            padding: 10px 14px;
+        }
+        &__submit {
+            padding: 10px 14px;
+        }
+    }
+}

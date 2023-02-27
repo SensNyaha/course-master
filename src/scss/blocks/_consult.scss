@@ -1,0 +1,122 @@
+.consult {
+    padding-top: 74px;
+    padding-bottom: 110px;
+    &_office {
+        margin-top: 189px;
+        background: url(../images/consult/office.jpg) no-repeat center center/cover;
+    }
+    &_wraps {
+        margin-top: 100px;
+        background: url(../images/consult/wraps.jpg) no-repeat center center/cover;
+    }
+    &_footer {
+        margin-top: 155px;
+        background: url(../images/consult/footer.jpg) no-repeat center center/cover;
+        padding: 47px 0;
+    }
+
+    &__title {
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__form {
+        margin-top: 53px;
+    }
+
+    &__wrapper {
+        width: 822px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .consult {
+        &__title {
+            font-size: 42px;
+            line-height: 48px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        &__wrapper {
+            width: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .consult {
+        &__title {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        &__subtitle {
+            font-size: 26px;
+            line-height: 34px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .consult {
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .consult {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .consult {
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__form {
+            margin-top: 37px;
+            gap: 11px;
+        }
+    }
+}
